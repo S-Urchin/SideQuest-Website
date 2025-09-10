@@ -1,0 +1,115 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f9fc;
+  color: #2e2e2e;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 100vh;
+  background: #263238;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.sidebar a img {
+  width: 30px;
+  margin: 20px 0;
+  transition: transform 0.3s ease;
+  filter: brightness(0) invert(1);
+}
+
+.sidebar a:hover img {
+  transform: scale(1.1);
+}
+
+.main-content {
+  margin-left: 90px;
+  padding: 30px;
+}
+
+.level-bar progress {
+  width: 200px;
+  height: 20px;
+}
+
+.questboard-preview, .quest-cards {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.card {
+  width: 160px;
+  height: 100px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.number {
+  width: 30px;
+  height: 30px;
+  background: #4caf50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.tab-menu a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: bold;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease;
+}
+
+.tab-menu a:hover {
+  border-bottom: 2px solid #2e7d32;
+}
+
+.more-btn, button {
+  margin-top: 20px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.more-btn:hover, button:hover {
+  background-color: #1b5e20;
+}
